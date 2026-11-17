@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icons8-shoe-100 (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <title>TailwindCss</title>
+</head>
+<body>
+  <!-- NEVBAR SECTION -->
+<nav class="bg-[#040D12] fixed w-full z-20 top-0 start-0 border-b border-default">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./images/icons8-shoe-100 (1).png" class="h-10">
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap text-[#93B1A6]">The Shoes</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="text-[#040D12] font-bold bg-[#5C8374] rounded-[10px]  hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Get started</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#home" class="block py-2 px-3 text-white font-bold bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3 text-heading rounded text-white font-bold hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="#collection" class="block py-2 px-3 text-heading rounded text-white  font-bold hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Collection</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 px-3 text-heading rounded  text-white  font-bold hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NEVBAR SECTION AND -->
+<!-- HOME SECTION START -->
+  <section class="text-gray-600 body-font bg-[#d3dfdb]" id="home">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h2 class=" title-font text-2xl text-white font-bold">Men Fashion</h2>
+      <h1 class="title-font text-7xl mb-2 text-[#040D12] font-bold">Branded Shoes</h1>
+        <h1 class=" title-font text-5xl mb-3 font-style: italic text-white ">Make Yur Move Memorable</h1>
+      <p class="mb-8 leading-6 ">Whether you are chasing a new personal record on the track or just looking for a reliable pair of everyday sneakers, finding the perfect footwear is all about balancing comfort, durability, and style. Modern shoe websites have revolutionized the way we shop.</p>
+      <div class="flex justify-center">
+        <a href="https://theshoesbar.pk/" target="_blank"><button class="inline-flex text-white bg-[#183D3D] border-0 py-2 px-6 focus:outline-none hover:text-[#040D12] bg-[#93B1A6]  rounded text-lg">Shop Now</button></a>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-[#93B1A6] rounded text-lg">Learn More</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class=" object-center rounded h-120 w-110 rounded-[50px]" alt="hero" src="./images/Streetwear.jpg">
+    </div>
+  </div>
+</section>
+<!-- HOME SECTION AND -->
+<!-- ABOUT SECTION START -->
+<section aria-labelledby="hero-product-title" class="relative isolate overflow-hidden bg-[#E5ECEA] px-4 pt-16 md:px-8 md:pt-24 dark:bg-neutral-950" id="about">
+   <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,currentColor_1px,transparent_1px),linear-gradient(to_bottom,currentColor_1px,transparent_1px)] [mask-image:radial-gradient(70%_80%_at_top,black_20%,transparent_100%)] bg-[size:40px_40px] text-neutral-950 opacity-5 dark:text-neutral-50 dark:opacity-10"></div>
+   </div>
+   <div class="mx-auto max-w-7xl text-center">
+      <a href="#" class="group inline-flex max-w-full items-center gap-2 rounded-full bg-white py-1 pr-3 pl-1 text-xs font-medium text-neutral-950 shadow-md ring-1 ring-neutral-950/10 transition-shadow duration-150 hover:ring-neutral-950/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 motion-reduce:transition-none dark:bg-neutral-900 dark:text-neutral-50 dark:ring-neutral-800 dark:hover:ring-neutral-700 dark:focus-visible:outline-blue-500"><span class="shrink-0 rounded-full bg-[#040D12] px-2 py-0.5 text-white bg-black dark:text-white">New</span><span class="truncate">Shared inboxes for every team</span><svg class="size-3.5 shrink-0 text-neutral-600 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none dark:text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></a>
+      <h1 id="hero-product-title" class="mx-auto mt-6 max-w-4xl text-4xl leading-[1.05] font-black tracking-tight text-balance text-neutral-950 sm:text-5xl lg:text-6xl xl:text-7xl dark:text-neutral-50">Answer every customer from one calm inbox</h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg/7 text-pretty text-neutral-600 dark:text-neutral-400">We are a modern shoe store dedicated to bringing you the latest styles, best quality, and unbeatable comfort. Step into a world of fashion with us!.</p>
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
+         <a href="#" class="group inline-flex h-11 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#183D3D] px-5 text-[15px] font-medium whitespace-nowrap text-white shadow-md transition-colors duration-150 hover:bg-[#93B1A6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:translate-y-px disabled:cursor-not-allowed dark:bg-blue-500 dark:text-white dark:hover:bg-blue-400 dark:focus-visible:outline-blue-500">View Our Reviews<svg class="size-4 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+         <a href="#" class="inline-flex h-11 cursor-pointer items-center justify-center gap-2 rounded-full bg-neutral-100 px-5 text-[15px] font-medium whitespace-nowrap text-neutral-950 transition-colors duration-150 hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:translate-y-px dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-700 dark:focus-visible:outline-blue-500"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></svg>Explore Collection</a>
+      </div>
+      <p class="mt-8 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-neutral-600 dark:text-neutral-400">
+         <span class="flex items-center gap-0.5" aria-hidden="true"><svg class="size-4 fill-[#ffc107] text-[#ffc107]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="size-4 fill-[#ffc107] text-[#ffc107]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="size-4 fill-[#ffc107] text-[#ffc107]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="size-4 fill-[#ffc107] text-[#ffc107]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><svg class="size-4 fill-[#ffc107] text-[#ffc107]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></span>
+         <span><span class="font-medium mb-100 text-neutral-950 dark:text-neutral-50">4.8 out of 5</span> from 1,900 support teams</span>
+      </p>
+<br><br><br>
+      </div>
+   </div>
+</section>
+<!-- GALLERY SECTION START -->
+ <section  aria-labelledby="ig-masonry-title" class="bg-[#d3dfdb] px-4 py-16 md:px-8 md:py-24 dark:bg-neutral-950" id="collection">
+   <div class="mx-auto max-w-7xl">
+      <div class="mx-auto max-w-2xl text-center">
+         <p class="font-mono text-xs tracking-widest text-neutral-600 uppercase dark:text-neutral-400"> THE SNEAKER COLLECTION</p>
+         <h2 id="ig-masonry-title" class="mt-3 text-3xl font-black tracking-tight text-balance text-neutral-950 sm:text-4xl dark:text-neutral-50">Step Into Your Style</h2>
+         <p class="mt-4 text-lg/7 text-pretty text-neutral-600 dark:text-neutral-400">Explore our latest sneaker collection, where comfort meets style. From classic designs to modern trends, find the perfect pair for every step.</p>
+      </div>
+      <ul class="mt-10 grid grid-cols-2 gap-2 sm:gap-4 md:mt-14 lg:grid-cols-4">
+         <li><button type="button" data-photo="" data-caption="The long table, Lisbon" data-meta="Where most of the product team sits, most weekdays" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/Tênis Casual Branco Masculino Feminino Academia (1).jpg" alt="People working on laptops along a long wooden table in a busy open-plan studio full of plants" width="1536" height="1052" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Roadmap review" data-meta="Design and product, every other Thursday" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/shoes.jpg" alt="Four colleagues laughing together round a desk with a laptop, a tablet and printed charts" width="1536" height="960" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Sprint planning" data-meta="Monday mornings, with the remote half on the screen" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/download (2).jpg" alt="Five people with laptops and coffee round a wooden meeting table while one stands at a screen" width="1536" height="661" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Quarterly results" data-meta="Ana Ribeiro presenting Q3 to the board in October" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/download (7).jpg" alt="A woman presents a bar chart on a wall screen to eight people round a boardroom table high above a city" width="1713" height="918" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Release day" data-meta="Tomás Ferreira shipping the new import flow" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/download (8).jpg" alt="A developer in a denim shirt writes code on a laptop at a bright white desk" width="1536" height="1025" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="After the launch" data-meta="Priya Natarajan, the night version 4 went live" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/download (9).jpg" alt="A smiling woman in a denim jacket at her desk in an office lit by warm desk lamps in the evening" width="1536" height="1024" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Writing week" data-meta="Five days a quarter with no meetings, only documents" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/HolloShoe _ Best Designer & Dress Shoes for Stylish Men.jpg" alt="Hands typing on a laptop on a dark desk beside a notebook, a cup of coffee and sticky notes, seen from above" width="1200" height="800" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="A desk in Osaka" data-meta="Kenji Watanabe’s home office, one of 21 on the team" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/Men's Casual Sports Shoes, Non-Slip Student Sneakers For All Seasons, Versatile Valentines.jpg" alt="A home office with a large monitor, a keyboard on a black desk mat and a grey mesh chair beside a window" width="1200" height="700" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+                  <li><button type="button" data-photo="" data-caption="The long table, Lisbon" data-meta="Where most of the product team sits, most weekdays" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/Tenis Casual Masculino Sneakers Design Moderno Solado alto Confortavel Dia Dos Pais.jpg" alt="People working on laptops along a long wooden table in a busy open-plan studio full of plants" width="1536" height="1052" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Roadmap review" data-meta="Design and product, every other Thursday" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/Men's Brown Full-Grain Leather Sneakers – Handmade Minimalist Lace-Up Casual Footwear.jpg"Four colleagues laughing together round a desk with a laptop, a tablet and printed charts" width="1536" height="960" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+         <li><button type="button" data-photo="" data-caption="Sprint planning" data-meta="Monday mornings, with the remote half on the screen" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/Fashion men's shoes.jpg" alt="Five people with laptops and coffee round a wooden meeting table while one stands at a screen" width="1536" height="661" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+            <li><button type="button" data-photo="" data-caption="Sprint planning" data-meta="Monday mornings, with the remote half on the screen" aria-haspopup="dialog" class="group relative block aspect-[4/3] w-full cursor-pointer overflow-hidden rounded-3xl bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:bg-neutral-800 dark:focus-visible:outline-blue-500"><img src="./images/download (10).jpg" alt="Five people with laptops and coffee round a wooden meeting table while one stands at a screen" width="1536" height="661" loading="lazy" class="size-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105 motion-reduce:transition-none" /></button></li>
+      </ul>
+   </div>
+
+   <div id="ig-grid-overlay" hidden class="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6">
+      <div data-close="" class="absolute inset-0 bg-neutral-950/40 backdrop-blur-xs"></div>
+      <div role="dialog" id="ig-grid-panel" aria-modal="true" aria-labelledby="ig-grid-viewer-title" class="relative flex max-h-[calc(100dvh-2rem)] w-full flex-col overflow-hidden rounded-t-4xl bg-white shadow-2xl ring-1 ring-neutral-950/10 sm:max-h-[calc(100dvh-3rem)] sm:max-w-4xl sm:rounded-4xl dark:bg-neutral-900 dark:ring-neutral-800">
+         <div class="flex shrink-0 items-center justify-between gap-4 border-b border-neutral-200 px-5 py-3.5 sm:px-6 dark:border-neutral-800">
+            <div class="flex min-w-0 items-baseline gap-3">
+               <h3 id="ig-grid-viewer-title" class="truncate text-base font-semibold text-neutral-950 dark:text-neutral-50">Life at Brightpath</h3>
+               <p id="ig-grid-count" aria-live="polite" aria-atomic="true" class="shrink-0 text-sm text-neutral-600 tabular-nums dark:text-neutral-400">1 of 8</p>
+            </div>
+            <button type="button" id="ig-grid-close" data-close="" aria-label="Close" class="-mr-2 inline-flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-2xl text-neutral-600 transition-colors duration-150 hover:bg-neutral-100 hover:text-neutral-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus-visible:outline-blue-500"><svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+         </div>
+         <div class="min-h-0 grow overflow-y-auto">
+            <div id="ig-grid-stage" class="relative aspect-[3/2] max-h-[60dvh] w-full touch-pan-y bg-neutral-100 select-none dark:bg-neutral-950">
+               <img id="ig-grid-image" src="https://readymadeui.com/images/about-image-1.webp" alt="People working on laptops along a long wooden table in a busy open-plan studio full of plants" draggable="false" class="size-full object-contain" />
+               <button type="button" id="ig-grid-prev" disabled aria-label="Previous photo" class="absolute top-1/2 left-3 inline-flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-neutral-950 shadow-lg ring-1 ring-neutral-950/10 transition duration-150 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 disabled:pointer-events-none disabled:opacity-0 motion-reduce:transition-none dark:bg-neutral-900/90 dark:text-neutral-50 dark:ring-neutral-700 dark:hover:bg-neutral-800 dark:focus-visible:outline-blue-500"><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg></button>
+               <button type="button" id="ig-grid-next" aria-label="Next photo" class="absolute top-1/2 right-3 inline-flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-neutral-950 shadow-lg ring-1 ring-neutral-950/10 transition duration-150 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 disabled:pointer-events-none disabled:opacity-0 motion-reduce:transition-none dark:bg-neutral-900/90 dark:text-neutral-50 dark:ring-neutral-700 dark:hover:bg-neutral-800 dark:focus-visible:outline-blue-500"><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></button>
+            </div>
+            
+            <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 px-5 py-4 sm:px-6">
+               <p id="ig-grid-caption" class="text-sm font-medium text-neutral-950 dark:text-neutral-50">The long table, Lisbon</p>
+               <p id="ig-grid-meta" class="text-[13px] text-neutral-600 dark:text-neutral-400">Where most of the product team sits, most weekdays</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+</section>
+ <!-- GALLERY SECTION AND -->
+<!-- CONTACT SECTION  START-->
+ <section aria-labelledby="contact-map-title" class="bg-[#E5ECEA] px-4 py-16 md:px-8 md:py-24 dark:bg-neutral-950" id="contact">
+   <div class="mx-auto grid max-w-2xl gap-x-16 gap-y-12 lg:max-w-7xl lg:grid-cols-2">
+      <div>
+         <p class="font-mono text-xs tracking-widest text-neutral-600 uppercase dark:text-neutral-400">Visit or write</p>
+         <h2 id="contact-map-title" class="mt-3 text-3xl font-black tracking-tight text-balance text-neutral-950 sm:text-4xl dark:text-neutral-50">Come and see us in Berlin</h2>
+         <p class="mt-4 max-w-xl text-lg/7 text-pretty text-neutral-600 dark:text-neutral-400">Our team works from Torstraße, five minutes from Rosenthaler Platz. Drop by for a coffee, or send a note and we'll reply within one business day.</p>
+
+         <form id="contact-map-form" class="mt-10 grid gap-x-4 gap-y-5 sm:grid-cols-2">
+            <div>
+               <label for="contact-map-name" class="mb-1.5 block text-sm font-medium text-neutral-950 dark:text-neutral-50">Name</label>
+               <input id="contact-map-name" name="name" type="text" autocomplete="name" required placeholder="Lena Fischer" class="block h-10 w-full rounded-2xl bg-neutral-100 px-3 text-sm text-neutral-950 outline-1 -outline-offset-1 outline-neutral-200 placeholder:text-neutral-600 hover:outline-neutral-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900 aria-[invalid=true]:outline-red-600 dark:bg-neutral-900 dark:text-neutral-50 dark:outline-neutral-700 dark:placeholder:text-neutral-400 dark:hover:outline-neutral-600 dark:focus:outline-blue-500 dark:aria-[invalid=true]:outline-red-500" />
+               <p id="contact-map-name-error" hidden class="mt-1.5 flex items-center gap-1.5 text-[13px] text-red-700 dark:text-red-400"><svg class="size-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="8" y2="12" /><line x1="12" x2="12.01" y1="16" y2="16" /></svg>Enter your name.</p>
+            </div>
+            <div>
+               <label for="contact-map-email" class="mb-1.5 block text-sm font-medium text-neutral-950 dark:text-neutral-50">Email</label>
+               <input id="contact-map-email" name="email" type="email" autocomplete="email" required placeholder="lena@northwind.de" class="block h-10 w-full rounded-2xl bg-neutral-100 px-3 text-sm text-neutral-950 outline-1 -outline-offset-1 outline-neutral-200 placeholder:text-neutral-600 hover:outline-neutral-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900 aria-[invalid=true]:outline-red-600 dark:bg-neutral-900 dark:text-neutral-50 dark:outline-neutral-700 dark:placeholder:text-neutral-400 dark:hover:outline-neutral-600 dark:focus:outline-blue-500 dark:aria-[invalid=true]:outline-red-500" />
+               <p id="contact-map-email-error" hidden class="mt-1.5 flex items-center gap-1.5 text-[13px] text-red-700 dark:text-red-400"><svg class="size-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="8" y2="12" /><line x1="12" x2="12.01" y1="16" y2="16" /></svg>Enter an email like lena@northwind.de.</p>
+            </div>
+            <div class="sm:col-span-2">
+               <label for="contact-map-message" class="mb-1.5 block text-sm font-medium text-neutral-950 dark:text-neutral-50">Message</label>
+               <textarea id="contact-map-message" name="message" rows="5" maxlength="1000" required placeholder="We'd like to visit with two colleagues next Thursday afternoon." aria-describedby="contact-map-message-count" class="block w-full resize-y rounded-2xl bg-neutral-100 px-3 py-2 text-sm/6 text-neutral-950 outline-1 -outline-offset-1 outline-neutral-200 placeholder:text-neutral-600 hover:outline-neutral-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900 aria-[invalid=true]:outline-red-600 dark:bg-neutral-900 dark:text-neutral-50 dark:outline-neutral-700 dark:placeholder:text-neutral-400 dark:hover:outline-neutral-600 dark:focus:outline-blue-500 dark:aria-[invalid=true]:outline-red-500"></textarea>
+               <div class="mt-1.5 flex items-start justify-between gap-4 text-[13px]">
+                  <p id="contact-map-message-error" hidden class="flex min-w-0 items-center gap-1.5 text-red-700 dark:text-red-400"><svg class="size-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="8" y2="12" /><line x1="12" x2="12.01" y1="16" y2="16" /></svg>Tell us how we can help.</p>
+                  <p id="contact-map-message-count" class="ml-auto shrink-0 text-neutral-600 tabular-nums dark:text-neutral-400">1,000 characters left</p>
+               </div>
+            </div>
+            <div class="pt-1 sm:col-span-2">
+               <button type="submit" id="contact-map-submit" class="group inline-flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-[#183D3D] px-4 text-sm font-medium whitespace-nowrap text-white shadow-md transition-colors duration-150 hover:bg-[#5C8374] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:min-w-40 dark:bg-blue-500 dark:text-white dark:hover:bg-blue-400 dark:focus-visible:outline-blue-500">
+                  <svg class="hidden size-4 animate-spin group-aria-busy:block motion-reduce:animate-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56" /></svg>
+                  <span id="contact-map-submit-label">Send message</span>
+               </button>
+            </div>
+         </form>
+
+         <div id="contact-map-sent" hidden class="mt-10 rounded-4xl bg-neutral-100 p-6 sm:p-8 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800">
+            <span class="flex size-11 items-center justify-center rounded-3xl bg-green-50 text-green-700 ring-1 ring-green-600/20 ring-inset dark:bg-green-500/10 dark:text-green-400 dark:ring-green-500/20"><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /><path d="m16 19 2 2 4-4" /></svg></span>
+            <h3 id="contact-map-sent-title" tabindex="-1" class="mt-6 text-xl font-black tracking-tight text-neutral-950 focus:outline-hidden dark:text-neutral-50">Message sent</h3>
+            <p class="mt-2 max-w-md text-sm text-pretty text-neutral-600 dark:text-neutral-400">Thanks, <span id="contact-map-sent-name">Lena</span>. We'll reply to <span id="contact-map-sent-email" class="font-medium break-all text-neutral-950 dark:text-neutral-50">lena@northwind.de</span> within one business day.</p>
+            <button type="button" id="contact-map-again" class="mt-6 inline-flex cursor-pointer items-center gap-1.5 rounded-lg text-sm font-medium text-neutral-600 transition-colors duration-150 hover:text-neutral-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 disabled:cursor-not-allowed disabled:hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-50 dark:focus-visible:outline-blue-500 dark:disabled:hover:text-neutral-400"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Send another message</button>
+         </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-4xl bg-neutral-100 sm:aspect-[16/10] lg:aspect-auto lg:min-h-[32rem] dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800">
+         <div class="relative aspect-[4/3] sm:absolute sm:inset-0 sm:aspect-auto">
+            <svg class="absolute inset-0 size-full" viewBox="0 0 800 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Street map of Berlin-Mitte with the Kestrel office marked on Torstraße, between Rosenthaler Straße and Brunnenstraße">
+               <rect width="800" height="640" class="fill-neutral-200 dark:fill-neutral-950" />
+               <path d="M-20 530C110 480 220 572 360 548S580 612 820 586V660H-20Z" class="fill-neutral-300 dark:fill-neutral-800" />
+               <path d="M600 40 742 30 756 160 614 176Z" class="fill-neutral-100 dark:fill-neutral-900" />
+               <g class="fill-neutral-300 dark:fill-neutral-800">
+                  <circle cx="640" cy="70" r="9" />
+                  <circle cx="676" cy="92" r="12" />
+                  <circle cx="714" cy="62" r="8" />
+                  <circle cx="648" cy="124" r="10" />
+                  <circle cx="712" cy="118" r="9" />
+               </g>
+               <g fill="none" stroke-width="7" stroke-linecap="round" class="stroke-neutral-100 dark:stroke-neutral-900">
+                  <path d="M-20 84H590" />
+                  <path d="M-20 336H820" />
+                  <path d="M-20 452H820" />
+                  <path d="M110-20 96 660" />
+                  <path d="M196 210 184 452" />
+                  <path d="M456-20V452" />
+                  <path d="M690 200 704 660" />
+                  <path d="M360 452 420 552" />
+               </g>
+               <g fill="none" stroke-width="16" stroke-linecap="round" class="stroke-white dark:stroke-neutral-800">
+                  <path d="M-20 214 820 190" />
+                  <path d="M250-20 430 660" />
+                  <path d="M560-20 580 660" />
+               </g>
+               <g class="fill-neutral-600 text-[13px] font-medium dark:fill-neutral-400">
+                  <text x="40" y="200" transform="rotate(-1.6 40 200)">Torstraße</text>
+                  <text x="594" y="290" transform="rotate(88 594 290)">Brunnenstraße</text>
+                  <text x="380" y="400" transform="rotate(75 380 400)">Rosenthaler Str.</text>
+                  <text x="624" y="158">Weinbergspark</text>
+               </g>
+               <circle cx="520" cy="190" r="26" class="fill-blue-900/10 dark:fill-blue-500/15" />
+               <g transform="translate(496 150) scale(2)">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" stroke-width="1" class="fill-blue-900 stroke-white dark:fill-blue-500 dark:stroke-neutral-900" />
+                  <circle cx="12" cy="10" r="3.2" class="fill-white dark:fill-white" />
+               </g>
+            </svg>
+         </div>
+         <div class="m-3 rounded-4xl bg-white p-5 shadow-2xl ring-1 ring-neutral-950/5 sm:absolute sm:bottom-4 sm:left-4 sm:m-0 sm:w-80 dark:bg-neutral-800 dark:ring-white/5">
+            <p class="text-base font-semibold text-neutral-950 dark:text-neutral-50">Kestrel Berlin</p>
+            <address class="mt-1 text-sm text-neutral-600 not-italic dark:text-neutral-400">Torstraße 109, 10119 Berlin<br />Germany</address>
+            <ul class="mt-4 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+               <li class="flex items-center gap-2"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg><span class="tabular-nums">Mon–Fri, 9:00–18:00 CET</span></li>
+               <li class="flex items-center gap-2"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.1V7a4 4 0 0 0 8 0V3.1" /><path d="m9 15-1-1" /><path d="m15 15 1-1" /><path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z" /><path d="m8 19-2 3" /><path d="m16 19 2 3" /></svg>U8 Rosenthaler Platz, 5 min walk</li>
+               <li class="flex items-center gap-2"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg><a href="tel:+493056832210" class="rounded-lg font-medium text-neutral-950 tabular-nums underline decoration-neutral-950/20 underline-offset-4 transition-colors duration-150 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 dark:text-neutral-50 dark:decoration-neutral-50/20 dark:focus-visible:outline-blue-500">+49 30 5683 2210</a></li>
+            </ul>
+            <div class="mt-5">
+               <a href="#" class="inline-flex h-9 items-center justify-center gap-2 rounded-full border border-neutral-200 bg-white px-3.5 text-sm font-medium whitespace-nowrap text-neutral-950 shadow-md transition-colors duration-150 hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:translate-y-px dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-50 dark:hover:bg-neutral-800 dark:focus-visible:outline-blue-500"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>Get directions</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+ <!-- CONTACT SECTION -->
+    <!-- $nbsp;    non breakspace -->
+</body>
+</html>
